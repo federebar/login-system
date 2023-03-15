@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<%- include('includes/head.ejs') %>
+    <title>Sign Up</title>
+    </head>
+
+    <body class="bg-pink-100 h-screen flex items-center justify-center">
+
+        <form class="w-2/5 max-w-2xl bg-white py-8 rounded-md p-6 space-y-4" method="POST" action="/sign-up">
+            <h1 class="text-center font-semibold text-2xl">Sign Up</h1>
+            <div class="bg-gray-200 rounded-full p-1">
+                <input name="firstName"
+                    class="bg-transparent p-2 focus:outline-none focus:border-none text-gray-600 w-full"
+                    placeholder="First Name" type="text">
+            </div>
+            <div class="bg-gray-200 rounded-full p-1">
+                <input name="lastName"
+                    class="bg-transparent p-2 focus:outline-none focus:border-none text-gray-600 w-full"
+                    placeholder="Last Name" type="text">
+            </div>
+            <div class="bg-gray-200 rounded-full p-1">
+                <input name="email" class="bg-transparent p-2 focus:outline-none focus:border-none text-gray-600 w-full"
+                    placeholder="Email" type="email">
+            </div>
+            <div class="bg-gray-200 rounded-full p-1">
+                <input name="password"
+                    class="bg-transparent p-2 focus:outline-none focus:border-none text-gray-600 w-full"
+                    placeholder="Password" type="password">
+            </div>
+            <div class="bg-gray-200 rounded-full p-1">
+                <input name="confirmPassword" required
+                    class="bg-transparent p-2 focus:outline-none focus:border-none text-gray-600 w-full"
+                    placeholder="Confirm Password" type="password">
+            </div>
+            <div class="flex space-x-2 items-center">
+                <button class="bg-pink-400 py-2 px-4 rounded-full text-white text-sm font-semibold">SIGN UP</button>
+                <p class="text-gray-400">Already have an account? <a class="text-pink-400" href="/sign-in">Sign In</a>
+                </p>
+            </div>
+        </form>
+    </body>
+
+    </html>

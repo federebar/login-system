@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<%- include('includes/head.ejs') %>
+    <title>Sign In</title>
+    </head>
+
+    <body class="bg-pink-100 h-screen flex items-center justify-center flex-col">
+        <h1 class="text-3xl font-semibold">Welcome,
+            <span> <%= currentUser.firstName %> </span>
+            <span> <%= currentUser.lastName %> </span>
+        </h1>
+        <a class="text-white bg-black px-4 py-2 rounded-2xl" href="/sign-out">Logout</a>
+    </body>
+
+    </html>
